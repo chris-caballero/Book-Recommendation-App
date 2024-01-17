@@ -2,7 +2,7 @@
 book-env/
 
 # Node modules
-my-book-app/node_modules/
+book-app/node_modules/
 
 # Editor specific files
 .vscode/
@@ -29,4 +29,4 @@ __pycache__/
 .ipynb_checkpoints
 
 # Production build folder for React
-my-book-app/build/
+book-app/build/
