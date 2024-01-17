@@ -24,9 +24,11 @@ function Modal({ book, onClose }) {
             <div className="modal-content">
                 <span className="close" onClick={onClose}>&times;</span>
                 <div className="book-details">
-                <h2>{book.title}</h2>
-                <p>{book.author}</p>
-                <p>{book.description}</p>
+                    <h3>{book.title}</h3>
+                    <p><b>Author:</b> {book.author}</p>
+                    <p><b>Description:</b> {book.description}</p>
+                    <p><b>Number of Pages:</b> {book.num_pages}</p>
+                    <p><b>Average Rating:</b> {book.average_rating}</p>
                 </div>
             </div>
         </div>

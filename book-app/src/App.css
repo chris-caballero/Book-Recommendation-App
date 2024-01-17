@@ -63,6 +63,8 @@ header {
 .book-card {
   /* Your existing styles for book-card */
   /* You might want to set a max-width for book cards for better appearance */
+  display: flex;
+  height: 250px;
   max-width: 200px; /* Example width */
   background: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -78,6 +80,15 @@ header {
   border: 1px solid #007bff; /* Highlight border */
 }
 
+.book-title {
+  margin-top: auto;
+  width: 100%;
+  font-size: 10px;
+  overflow: hidden;
+  height: 28px;
+  padding: 3px 3px 3px 4px;
+  background-color: grey;
+}
 
 .modal {
   display: block;
@@ -96,8 +107,9 @@ header {
   padding: 20px;
   border: 1px solid #888;
   border-radius: 20px;
-  width: 10%; /* Adjust width as needed */
-  
+  width: 25%; /* Adjust width as needed */
+  height: 50%;
+  overflow-y: auto;
   position: fixed; /* Use fixed instead of absolute */
   top: 50%;
   left: 50%;

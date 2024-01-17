@@ -30,3 +30,6 @@ __pycache__/
 
 # Production build folder for React
 book-app/build/
+
+# Data folder
+data/
