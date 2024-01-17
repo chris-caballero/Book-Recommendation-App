@@ -1,0 +1,32 @@
+# Python virtual environment
+book-env/
+
+# Node modules
+my-book-app/node_modules/
+
+# Editor specific files
+.vscode/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Python test files
+*.pytest_cache/
+.coverage
+*.coverage.*
+
+# Log files
+*.log
+
+# Environment files
+.env
+
+# Compiled files
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Production build folder for React
+my-book-app/build/

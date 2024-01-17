@@ -31,7 +31,7 @@ function App() {
                     <input type="text" placeholder="Search by title, genre, or description" />
                     <button>Search</button>
                 </div>
-                <div className="recommendation-switch">
+                <div className="recommendation-switch"> 
                     <label>
                         <input type="checkbox" id="rec-toggle" />
                         <span>Toggle Content</span>
