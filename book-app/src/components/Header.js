@@ -1,18 +1,13 @@
 import React from 'react';
+import { FaSearch } from 'react-icons/fa';
 
 function Header({ onSearch }) {
     return (
-        <header>
-            <h1>My Bookshelf</h1>
+        <header className="navbar">
+            <h1 className="navbar-brand">My Bookshelf Spot</h1>
             <div className="search-bar">
-                <input type="text" placeholder="Search by title, genre, or description" />
-                <button onClick={onSearch}>Search</button>
-            </div>
-            <div className="recommendation-switch"> 
-                <label>
-                    <input type="checkbox" id="rec-toggle" />
-                    <span>Toggle Content</span>
-                </label>
+                <input type="text" placeholder="Search by title, genre, or description" className="search-input" />
+                <FaSearch className="search-button" onClick={onSearch} />
             </div>
         </header>
     );

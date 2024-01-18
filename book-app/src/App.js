@@ -6,7 +6,7 @@ import Header from './components/Header';
 import useBooks from './hooks/useBooks'; // assuming this is in a hooks folder
 
 function App() {
-    const books = useBooks();
+    const { books, loading, error, loadMore } = useBooks(); // Destructure the returned values from useBooks
     const [modalBook, setModalBook] = useState(null);
 
     const showBookDetails = (book) => {
@@ -21,6 +21,9 @@ function App() {
         // Implement search functionality
     };
 
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error.message}</div>;
+
     return (
         <div className="App">
             <Header onSearch={handleSearch} />
@@ -31,9 +34,10 @@ function App() {
                             <BookCard key={index} book={book} onShowBookDetails={showBookDetails} />
                         ))}
                     </section>
+                    <button onClick={loadMore} className="load-more">Load More</button> {/* Load more books */}
                 </div>        
             </main>
-            <Modal book={modalBook} onClose={closeBookDetails} />
+            {modalBook && <Modal book={modalBook} onClose={closeBookDetails} />}
         </div>
     );
 }
